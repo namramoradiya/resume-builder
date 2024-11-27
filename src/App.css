@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.form-container, .preview-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 45%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2, h3 {
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.education-field {
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input, textarea {
+  width: 100%; /* Full width for input fields */
+  border: 2px solid black; /* Black border */
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Make sure padding doesn't affect width */
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+.btn-dark {
+  background-color: black !important;
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-dark:hover {
+  background-color: #333 !important; /* Darker hover effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
